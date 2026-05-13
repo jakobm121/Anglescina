@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="panel">
+    <h1>Moj napredek</h1>
+    <div class="progress-grid">
+        <div><span>{{ score.correct }}</span><p>Pravilno</p></div>
+        <div><span>{{ score.wrong }}</span><p>Napačno</p></div>
+        <div><span>{{ percent }}%</span><p>Uspešnost</p></div>
+    </div>
+    <p>Skupaj rešenih vaj: <strong>{{ total }}</strong></p>
+    <a class="button secondary" href="{{ url_for('reset') }}">Ponastavi napredek</a>
+</div>
+{% endblock %}

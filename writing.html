@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="panel">
+    <h1>Vadba pisanja</h1>
+    <p class="prompt">{{ prompt }}</p>
+    <form method="POST" class="form">
+        <textarea name="text" rows="8" placeholder="Write your answer here..." required>{{ text }}</textarea>
+        <button type="submit">Preveri</button>
+    </form>
+    {% if feedback %}
+        <div class="alert {{ feedback.type }}">{{ feedback.text }}</div>
+    {% endif %}
+</div>
+{% endblock %}

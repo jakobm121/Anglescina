@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Coach</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="{{ url_for('home') }}">English Coach</a>
+        <div>
+            <a href="{{ url_for('vocabulary') }}">Besedišče</a>
+            <a href="{{ url_for('grammar') }}">Slovnica</a>
+            <a href="{{ url_for('writing') }}">Pisanje</a>
+            <a href="{{ url_for('progress') }}">Napredek</a>
+        </div>
+    </nav>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

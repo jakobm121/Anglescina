@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="panel">
+    <h1>Vadba besedišča</h1>
+    <p>Prevedi v angleščino:</p>
+    <div class="question">{{ word.slovenian }}</div>
+
+    <form method="POST" class="form">
+        <input type="text" name="answer" placeholder="Vpiši angleški prevod" autocomplete="off" required autofocus>
+        <input type="hidden" name="correct_answer" value="{{ word.english }}">
+        <input type="hidden" name="slovenian" value="{{ word.slovenian }}">
+        <button type="submit">Preveri</button>
+    </form>
+
+    {% if result %}
+        <div class="alert {{ result.type }}">{{ result.text }}</div>
+    {% endif %}
+</div>
+{% endblock %}

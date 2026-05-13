@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+    <h1>Uči se angleščino vsak dan po malo</h1>
+    <p>Vadba besedišča, slovnice in pisanja za slovensko govoreče uporabnike.</p>
+    <div class="cards">
+        <a class="card" href="{{ url_for('vocabulary') }}">
+            <h2>Besedišče</h2>
+            <p>Prevedi slovenske besede v angleščino.</p>
+        </a>
+        <a class="card" href="{{ url_for('grammar') }}">
+            <h2>Slovnica</h2>
+            <p>Izberi pravilne odgovore in se uči iz razlage.</p>
+        </a>
+        <a class="card" href="{{ url_for('writing') }}">
+            <h2>Pisanje</h2>
+            <p>Napiši kratek tekst v angleščini.</p>
+        </a>
+    </div>
+</section>
+<section class="stats">
+    <h2>Tvoj trenutni rezultat</h2>
+    <p>Pravilno: <strong>{{ score.correct }}</strong> | Napačno: <strong>{{ score.wrong }}</strong></p>
+</section>
+{% endblock %}

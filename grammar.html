@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="panel">
+    <h1>Vadba slovnice</h1>
+    <div class="question">{{ exercise.question }}</div>
+
+    <form method="POST" class="form options">
+        {% for option in exercise.options %}
+            <label>
+                <input type="radio" name="answer" value="{{ option }}" required>
+                {{ option }}
+            </label>
+        {% endfor %}
+        <input type="hidden" name="correct_answer" value="{{ exercise.answer }}">
+        <input type="hidden" name="explanation" value="{{ exercise.explanation }}">
+        <button type="submit">Preveri</button>
+    </form>
+
+    {% if result %}
+        <div class="alert {{ result.type }}">
+            <p>{{ result.text }}</p>
+            <small>{{ result.explanation }}</small>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
