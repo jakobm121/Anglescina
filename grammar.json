@@ -1,0 +1,62 @@
+[
+  {
+    "question": "She ___ to school every day.",
+    "options": ["go", "goes", "going"],
+    "answer": "goes",
+    "explanation": "Pri he/she/it v present simple dodamo -s: she goes."
+  },
+  {
+    "question": "I ___ coffee right now.",
+    "options": ["drink", "am drinking", "drinks"],
+    "answer": "am drinking",
+    "explanation": "Right now pomeni, da se dogaja zdaj, zato uporabimo present continuous."
+  },
+  {
+    "question": "They ___ a movie yesterday.",
+    "options": ["watch", "watched", "watching"],
+    "answer": "watched",
+    "explanation": "Yesterday pomeni preteklost, zato uporabimo past simple."
+  },
+  {
+    "question": "There is ___ apple on the table.",
+    "options": ["a", "an", "the"],
+    "answer": "an",
+    "explanation": "Pred besedo apple uporabimo an, ker se začne z glasom samoglasnika."
+  },
+  {
+    "question": "We are interested ___ English.",
+    "options": ["on", "in", "at"],
+    "answer": "in",
+    "explanation": "Pravilna zveza je interested in."
+  },
+  {
+    "question": "He ___ play tennis very well.",
+    "options": ["can", "cans", "canning"],
+    "answer": "can",
+    "explanation": "Can se ne spreminja po osebah: I can, he can, they can."
+  },
+  {
+    "question": "I have lived here ___ 2020.",
+    "options": ["for", "since", "from"],
+    "answer": "since",
+    "explanation": "Since uporabimo za začetno točko v času."
+  },
+  {
+    "question": "This is ___ book I told you about.",
+    "options": ["a", "an", "the"],
+    "answer": "the",
+    "explanation": "The uporabimo, ko govorimo o nečem določenem."
+  },
+  {
+    "question": "My brother is taller ___ me.",
+    "options": ["then", "than", "that"],
+    "answer": "than",
+    "explanation": "Pri primerjanju uporabimo than."
+  },
+  {
+    "question": "We ___ dinner when you called.",
+    "options": ["were eating", "eat", "eats"],
+    "answer": "were eating",
+    "explanation": "Za dejanje, ki je trajalo v preteklosti, uporabimo past continuous."
+  }
+]
